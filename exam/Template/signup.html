@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- for icon-->
+<!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>signup page</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<style>
+body {
+
+        background-image: url('https://source.unsplash.com/1600x719/?nature');
+		font-family: 'Roboto', sans-serif;
+	}
+.form-control, .form-control:focus, .input-group-addon {
+		border-color: #e1e1e1;
+	}
+    .form-control, .btn {
+        border-radius: 3px;
+    }
+	.signup-form {
+		width: 390px;
+		margin: 0 auto;
+		padding: 30px 0;
+	}
+    .signup-form form {
+		color: #999;
+		border-radius: 3px;
+    	margin-bottom: 15px;
+        background: #fff;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+	.signup-form h2 {
+		color: #333;
+		font-weight: bold;
+        margin-top: 0;
+    }
+    .signup-form hr {
+        margin: 0 -30px 20px;
+    }
+	.signup-form .form-group {
+		margin-bottom: 20px;
+	}
+	.signup-form label {
+		font-weight: normal;
+		font-size: 13px;
+	}
+	.signup-form .form-control {
+		min-height: 38px;
+		box-shadow: none !important;
+	}
+	.signup-form .input-group-addon {
+		max-width: 62px;
+		text-align: center;
+	}
+	.signup-form input[type="checkbox"] {
+		margin-top: 2px;
+	}
+    .signup-form .btn{
+        font-size: 16px;
+        font-weight: bold;
+		background: #19aa8d;
+		border: none;
+		min-width: 140px;
+    }
+	.signup-form .btn:hover, .signup-form .btn:focus {
+		background: #179b81;
+        outline: none;
+	}
+	.signup-form a {
+		color: #fff;
+		text-decoration: underline;
+	}
+	.signup-form a:hover {
+		text-decoration: none;
+	}
+	.signup-form form a {
+		color: #19aa8d;
+		text-decoration: none;
+	}
+	.signup-form form a:hover {
+		text-decoration: underline;
+	}
+	.signup-form .fa {
+		font-size: 21px;
+	}
+	.signup-form .fa-paper-plane {
+		font-size: 18px;
+	}
+	.signup-form .fa-check {
+		color: #fff;
+		left: 17px;
+		top: 18px;
+		font-size: 7px;
+		position: absolute;
+	}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Sushil</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" >
+           <!-- <li class="nav-item active">
+                <a class="nav-link" href="/">Exam <span class="sr-only">(current)</span></a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="/GALLERY/gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/CONTACTUS/contactus">Contact Us</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" href="/ABOUT/about">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="signup-form">
+    <form action="exam" method="post"  onsubmit="return passfun()">
+        {% csrf_token %}
+		<h2>Sign Up</h2>
+		<p>Please fill in this form to create an account!</p>
+		<hr>
+        <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-user"></i></span>
+				<input type="text" class="form-control" name="signup_College_Id" placeholder="College Id" required="required">
+			</div>
+        </div>
+  <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-user"></i></span>
+				<input type="text" class="form-control" name="signup_college_name" placeholder="Username" required="required">
+			</div>
+        </div>
+        <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-user"></i></span>
+				<input type="number" class="form-control" name="semester" placeholder="Current Semester" required="required">
+			</div>
+        </div>
+        <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"> <i class="fa fa-paper-plane"> </i></span>
+				<input type="email" class="form-control" name="signup_email" placeholder="Email Address" required="required">
+			</div>
+        </div>
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+				<input type="text" class="form-control" id = "new_password" name="signup_password" placeholder="Password" required="required">
+				<span id = "password1"></span>
+			</div>
+        </div>
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon">
+					<i class="fa fa-lock"></i>
+					<i class="fa fa-check"></i>
+				</span>
+				<input type="text" class="form-control" id = "confirm_pass" name="confirm_password" placeholder="Confirm Password" required="required">
+				<span id = "password2"> </span>
+			</div>
+        </div>
+
+		<div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+	function  passfun()
+	{
+		var newpass = document.getElementById("new_password").value;
+		var conf_pas= document.getElementById("confirm_pass").value;
+		x = document.getElementById("password1");
+		y = document.getElementById("password2");
+		if(newpass == "")
+		{
+
+			x.innerHTML = " **Please fill password";
+			return false;
+		}
+		if(newpass.length<7 )
+		{
+			x.innerHTML = " **Password must be greater then 7 characters";
+			return false;
+		}
+		if(newpass.length>16 )
+		{
+			x.innerHTML = " **Password must be less then 16 characters";
+			return false;
+		}
+		if(newpass!= conf_pas)
+		{
+
+			y.innerHTML = " **Password does not match";
+			return false;
+		}
+	}
+</script>
