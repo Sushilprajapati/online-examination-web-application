@@ -6,7 +6,7 @@
 <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
 <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
 
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<!--<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">-->
 
 
     <meta charset="UTF-8">
@@ -24,6 +24,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 <style>
+#login_btn
+ {
+ border: none;
+ }
 body {
 
         background-image: url('https://source.unsplash.com/1600x719/?nature');
@@ -115,6 +119,8 @@ body {
 </style>
 </head>
 <body>
+<!-- <img class="d-block w-100 " src="static/photo-1573499506024-876dad7a8821.jpeg" alt="Third slide">-->
+<!--<img src="/home/sushil/PycharmProjects/A/exam/static/tim-johnson-430Ad4CRkhk-unsplash.jpg" />-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Sushil</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -134,6 +140,13 @@ body {
              <li class="nav-item">
                 <a class="nav-link" href="/ABOUT/about">About</a>
             </li>
+        </ul>
+
+            <ul class="navbar-nav " id = "login_signup">
+                <li class="nav-item " class = "button" >
+                    <button type="button" class="btn btn-outline-secondary" id = "login_btn"> <a class="nav-link" href="/SIGNUP2/login">Login</a> </button>
+                </li>
+
         </ul>
     </div>
 </nav>
@@ -166,7 +179,7 @@ body {
         <div class="form-group">
 			<div class="input-group">
 				<span class="input-group-addon"> <i class="fa fa-paper-plane"> </i></span>
-				<input type="email" class="form-control" name="signup_email" placeholder="Email Address" required="required">
+				<input type="date" class="form-control" name="signup_date" placeholder="Email Address" required="required">
 			</div>
         </div>
 		<div class="form-group">

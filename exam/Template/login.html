@@ -55,7 +55,7 @@
                 <a class="nav-link" href="/">Exam <span class="sr-only">(current)</span></a>
             </li> -->
             <li class="nav-item">
-                <a class="nav-link" href="/GALLERY/gallery">Gallery</a>
+               <a class="nav-link" href="/GALLERy1/gallery1">Gallery</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/CONTACTUS/contactus">Contact Us</a>
@@ -68,7 +68,7 @@
 </nav>
 <!--login-->
 <div class="login-form ">
-    <form action="loginexam"  method="post">
+    <form action="loginexam"  method="post" , id = "loginformid">
          {% csrf_token %}
         <h2 class="text-center">Log in</h2>
         <div class="form-group">
@@ -107,4 +107,5 @@ function toconvertupeer(){
 		 document.getElementById("login_password").value =   login_password.toUpperCase();
 
 		 }
+
 </script>

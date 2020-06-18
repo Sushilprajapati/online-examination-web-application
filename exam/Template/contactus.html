@@ -12,6 +12,160 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--    <script src='https://kit.fontawesome.com/a076d05399.js'></script>-->
+
+
+    <style>
+    body
+    {
+      background-image: url('https://source.unsplash.com/1600x719/?nature');
+		font-family: 'Roboto', sans-serif;
+		}
+.fa {
+  padding: 0.6vw;
+  font-size: 2.7vw;
+  width: 4vw;
+  height:4vw;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 1.9;
+    color:none;
+    text-decoration:none;
+
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+.fa-instagram {
+  background-image: linear-gradient(-12deg, #8a3ab9,#e95950,#bc2a8d,#fccc63, #fbad50, #cd486b,#4c68d7);
+  color: white;
+}
+
+.fa-github
+{
+
+background: #333;
+  color:white;
+};
+
+
+</style>
+<!--form style-->
+
+    <style>
+#login_btn
+ {
+ border: none;
+ }
+
+.form-control, .form-control:focus, .input-group-addon {
+		border-color: #e1e1e1;
+	}
+    .form-control, .btn {
+        border-radius: 3px;
+    }
+	.signup-form {
+		width: 36vw;
+		margin: 0 auto;
+		padding: 5vw 0;
+	}
+    .signup-form form {
+		color: #997;
+		border-radius: 1vw;
+    	margin-bottom: 1vw;
+        background: #fff;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 1vw;
+    }
+	.signup-form h2 {
+		color: #333;
+		font-weight: bold;
+        margin-top: 0;
+    }
+    .signup-form hr {
+        margin: 0 -1.0vw 1.2vw;
+    }
+	.signup-form .form-group {
+		margin-bottom: -1vw;
+	}
+	.signup-form label {
+		font-weight: normal;
+		font-size: 1vw;
+	}
+	.signup-form .form-control {
+		min-height: 2.2vw;
+		box-shadow: none !important;
+	}
+	.signup-form .input-group-addon {
+		max-width: 3vw;
+		text-align: center;
+	}
+	.signup-form input[type="checkbox"] {
+		margin-top: 1px;
+	}
+    .signup-form .btn{
+        font-size: 1.5vw;
+        font-weight: bold;
+		background: #19aa8d;
+		border: none;
+		min-width: 4vw;
+		margin-top:1.5vw;
+    }
+	.signup-form .btn:hover, .signup-form .btn:focus {
+		background: #179b81;
+        outline: none;
+	}
+	.signup-form a {
+		color: #fff;
+		text-decoration: underline;
+	}
+	.signup-form a:hover {
+		text-decoration: none;
+	}
+	.signup-form form a {
+		color: #19aa8d;
+		text-decoration: none;
+	}
+	.signup-form form a:hover {
+		text-decoration: underline;
+	}
+	.signup-form .fa {
+		font-size: 1.8vw;
+	}
+	.signup-form .fa-paper-plane {
+		font-size: 1.5vw;
+	}
+	.signup-form .fa-check {
+		color: #fff;
+		left: 17px;
+		top: 18px;
+		font-size: 7px;
+		position: absolute;
+	}
+</style>
+
+
 </head>
 <body>
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -28,7 +182,7 @@
                 <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/GALLERY/gallery">Gallery</a>
+                <a class="nav-link" href="/GALLERy1/gallery1">Gallery</a>
             </li>
 
              <li class="nav-item">
@@ -37,5 +191,76 @@
         </ul>
     </div>
  </nav>
+
+<!-- <h1>hdsjfhsjdfhjdshf jdfhjsdhfkjsdhfkjsdhf jhsfjdshf jhsdjkfhsajfh jshfs fhd fhhfd fhsjhf fdhs jfh     </h1>-->
+ <div class="signup-form">
+    <form action="exam" method="post"  onsubmit="return passfun()">
+        {% csrf_token %}
+		<h2>Let's Talk</h2>
+<!--		<p>Please fill in this form to create an account!</p>-->
+		<hr>
+
+  <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-user"></i></span>
+				<input type="text" class="form-control" name="contact_college_name" id = "c_college_name" placeholder="Full Name" required="required">
+			</div>
+        </div>
+
+        <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"> <i class="fa fa-paper-plane"> </i></span>
+				<input type="email" class="form-control" name="contact_email" placeholder="Email Address" required="required">
+			</div>
+        </div>
+        <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-phone"></i></span>
+				<input type="number" class="form-control" id = "c_phone" name="contact_phone" placeholder="Phone No." required="required">
+				<span id = "password1"></span>
+			</div>
+        </div>
+
+        <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-address-card"></i></span>
+				<input type="text" class="form-control" name="address" placeholder="Current Address" required="required">
+			</div>
+        </div>
+
+
+         <div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="fa fa-user"></i></span>
+				<input type="text" class="form-control" name="contact_College_Id" id = "c_college_id" placeholder="College Id" required="required">
+			</div>
+        </div>
+
+
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon">
+					<i class="fa fa-comments"></i>
+					<i class="fa fa-check"></i>
+				</span>
+                <textarea class="form-control" id = "confirm_pass" name="confirm_password" placeholder="Message" required="required"></textarea>
+				<span id = "password2"> </span>
+			</div>
+        </div>
+
+		<div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg" >Send message</button>
+        </div>
+    </form>
+</div>
+
+ <center><a href="www.sdjhfksdj.com" class="fa fa-facebook" ></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+<a href="https://github.com/Sushilprajapati" class="fa fa-github"></a>
+<a class='fab fa-hackerrank' style='font-size:48px;color:red'></a>
+ </center>
+
 </body>
 </html>

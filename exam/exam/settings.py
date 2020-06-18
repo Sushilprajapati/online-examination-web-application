@@ -31,9 +31,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'GALLERy1.apps.Gallery1Config',
     #'GALLERY.apps.GalleryConfig',
     'IMAGE_G.apps.ImageGConfig',
-    'SIGNUP1.apps.Signup1Config',
+    #'SIGNUP1.apps.Signup1Config',
+    'SIGNUP2.apps.Signup2Config',
     #'SIGNUP.apps.SignupConfig',
    # 'MYSTOREDATA.apps.MystoredataConfig',
     #'STUDENT_DATA.apps.StudentDataConfig',
@@ -43,6 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 'exam'
+
 ]
 
 MIDDLEWARE = [

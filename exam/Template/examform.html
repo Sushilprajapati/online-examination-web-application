@@ -23,14 +23,18 @@
 	{
 		margin-left: 3%;
 	}
-	strong
+
+	#showidonpage
 	{
-		font-size: 2em;
-		color: blue;
-	}
+	 position: fixed;
+		   top: 5.8vw;
+           right: 1.6vw;
+		   font-size:2vw;
+		   color: blue;
+	 }
 	#time_div
 	{
-		 
+
 		   position: fixed;
 		   top: 8vw;
            right: 1.6vw;
@@ -40,26 +44,172 @@
 
 #iframeforcalsi
 {
-            width:29vw;
+            width:24vw;
             height:20vw;
 		   position: fixed;
-		   bottom: 4vw;
-           right: 1.6vw;
+		   bottom: 0vw;
+           right: .1vw;
 		   color: red;
 	}
-
+#question_containar
+{
+width:70%;
+}
+.mark_assing
+{
+text-align:right;
+color:blue;
+}
 </style>
 
 <body onload="timer()" >
 	<div class="container-fluid">
-	<h1>This is examination </h1>
-	<br> <hr>
+      <div class="alert alert-secondary  alert-dismissible fade show" role="alert">
+        <strong>!</strong> Do not go back without submitting
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+      <h1 id = 'showidonpage'>{{showidonpage}}</h1>
+      <center>
+      <pre > <h1> Invertis</h1>
+            <h3 style="margin-top:-3.5vw">    University Bareilly </h3>
+          <h4 style="margin-top:-4.5vw"> .....................................</h4>
+        <h2 style="margin-top:-3.5vw"> B.Sc Computer Science - iv Semester</h2>
+         <h3 style="margin-top:-3.5vw">Even Semester Examination 2019-2020</h3>
+        <h3 style="margin-top:-3.5vw"> Subject Code: <strong> CSH-402 </strong></h3>
+        <h2 style="margin-top:-3.5vw"><strong>Ecommerce</strong></h2>
+        <h5 style="margin-top:-3.5vw"><strong>Time:03:00:00</strong>                            <strong>[Maximum Mark:70]</strong></h5>
+     </pre>
+      </center><hr>
       <p id="time_div" > </p>
       <iframe id = "iframeforcalsi"  src = " /static/calculator.html" > </iframe>
+      <h2><strong>NOTE:</strong> Attempt the following questions.</h2>
 	<hr>
-<form   action="" id = "examform">
+      <div id = "question_containar">
+<form   action="bsccs" id = "examform">
   <!-- Group of default radios - option 1 -->
- <strong class="strong"> 1. </strong> <b> <h4> The dimension of e-commerce that enables commerce across national boundaries is called _______. </h4>
+<!--  TRUE FALSE QUESTIONS-->
+<h5  class = "mark_assing" > (1x10 = 10 marks)</h5>
+
+  <h4> <strong> 1. </strong>The fundamentals of Marketing change when it is conducted online.</h4>
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_1_1" name="ecomerrce20">
+  <label class="custom-control-label" for="ecomerrce0_1_1">True </label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_1_2" name="ecomerrce20" >
+  <label class="custom-control-label" for="ecomerrce0_1_2">False </label>
+</div>
+  <br>
+
+
+  <h4> <strong> 2. </strong>The Internet allows mass marketing to be replaced by customized marketing.</h4>
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_2_1" name="ecomerrce20">
+  <label class="custom-control-label" for="ecomerrce0_2_1">True </label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_2_2" name="ecomerrce20" >
+  <label class="custom-control-label" for="ecomerrce0_2_2">False </label>
+</div>
+  <br>
+
+  <h4> <strong> 3. </strong> With the increased popularity of cybermederiaries in the automotive retail industry the traditional dealer is in tremendous danger of being displaced or disinteremediated.</h4>
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_3_1" name="ecomerrce20">
+  <label class="custom-control-label" for="ecomerrce0_3_1">True </label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_3_2" name="ecomerrce20" >
+  <label class="custom-control-label" for="ecomerrce0_3_2">False </label>
+</div>
+  <br>
+
+  <h4> <strong> 4. </strong>The Internet further separates a business from its customers.</h4>
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_4_1" name="ecomerrce20">
+  <label class="custom-control-label" for="ecomerrce0_4_1">True </label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_4_2" name="ecomerrce20" >
+  <label class="custom-control-label" for="ecomerrce0_4_2">False </label>
+</div>
+  <br>
+
+   <h4> <strong> 5. </strong> Consumers have increased choice online.</h4>
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_5_1" name="ecomerrce20">
+  <label class="custom-control-label" for="ecomerrce0_5_1">True </label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_5_2" name="ecomerrce20" >
+  <label class="custom-control-label" for="ecomerrce0_5_2">False </label>
+</div>
+  <br>
+
+   <h4> <strong> 6. </strong>  E-commerce is simply the buying and selling of goods online.</h4>
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_6_1" name="ecomerrce20">
+  <label class="custom-control-label" for="ecomerrce0_6_1">True </label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_6_2" name="ecomerrce20" >
+  <label class="custom-control-label" for="ecomerrce0_6_2">False </label>
+</div>
+  <br>
+
+
+   <h4> <strong> 7. </strong>  Amazon.com is a good example of a business-to-business E-commerce model.</h4>
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_7_1" name="ecomerrce20">
+  <label class="custom-control-label" for="ecomerrce0_7_1">True </label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_7_2" name="ecomerrce20" >
+  <label class="custom-control-label" for="ecomerrce0_7_2">False </label>
+</div>
+  <br>
+
+   <h4> <strong> 8. </strong>  A traditional business (such as Wal-Mart) that have evolved online and now have both an online and a physical presence are referred to as "clicks-and-mortar".</h4>
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_8_1" name="ecomerrce20">
+  <label class="custom-control-label" for="ecomerrce0_8_1">True </label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_8_2" name="ecomerrce20" >
+  <label class="custom-control-label" for="ecomerrce0_8_2">False </label>
+</div>
+  <br>
+
+
+   <h4> <strong> 9. </strong>   E-tail sites often act as gateways or entry points to the Web.</h4>
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_9_1" name="ecomerrce20">
+  <label class="custom-control-label" for="ecomerrce0_9_1">True </label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_9_2" name="ecomerrce20" >
+  <label class="custom-control-label" for="ecomerrce0_9_2">False </label>
+</div>
+  <br>
+
+    <h4> <strong> 10. </strong> Online classifieds are good examples of a consumer-to-consumer E-commerce model.</h4>
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_10_1" name="ecomerrce20">
+  <label class="custom-control-label" for="ecomerrce0_10_1">True </label>
+</div>
+<div class="custom-control custom-radio">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_10_2" name="ecomerrce20" >
+  <label class="custom-control-label" for="ecomerrce0_10_2">False </label>
+</div>
+  <br>
+
+<hr>
+  <br>
+<!--  MULTIPLE CHOICE QUESTIONS -->
+  <h5  class = "mark_assing" > (1x20 = 20 marks)</h5>
+  <b> <h4>  <strong> 1. </strong> The dimension of e-commerce that enables commerce across national boundaries is called _______. </h4>
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="ecomerrce1_1_1" name="ecomerrce1">
   <label class="custom-control-label" for="ecomerrce1_1_1">interactivity</label>
@@ -85,7 +235,7 @@
 </b>
 
 <b>
-<h4> Which of the following describes e‐commerce? </h4>
+<h4><strong> 2. </strong> Which of the following describes e‐commerce? </h4>
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="ecomerrce1_2_1" name="ecomerrce2">
   <label class="custom-control-label" for="ecomerrce1_2_1">Doing business electronically</label>
@@ -109,7 +259,7 @@
 </div></b>
 <br>
 <b>
-<h4> Which one of the following is not one of the major types of e-commerce? </h4>
+<h4> <strong> 3. </strong> Which one of the following is not one of the major types of e-commerce? </h4>
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="ecomerrce1_3_1" name="ecomerrce3">
   <label class="custom-control-label" for="ecomerrce1_3_1">C2B</label>
@@ -134,7 +284,7 @@
 </b>
 <br>
 <b>
-<h4> Which of the following is part of the four main types for e‐commerce? </h4>
+<h4> <strong> 4. </strong> Which of the following is part of the four main types for e‐commerce? </h4>
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="ecomerrce1_4_1" name="ecomerrce4">
   <label class="custom-control-label" for="ecomerrce1_4_1">B2B</label>
@@ -161,7 +311,7 @@
 
 <br>
 <b>
-<h4> Which of the following is not considered to be one of the three phases of e-commerce? </h4>
+<h4><strong> 5. </strong> Which of the following is not considered to be one of the three phases of e-commerce? </h4>
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="ecomerrce1_5_1" name="ecomerrce5">
   <label class="custom-control-label" for="ecomerrce1_5_1">Innovation</label>
@@ -188,7 +338,7 @@
 
 <br>
 <b>
-<h4> Which segment do eBay, Amazon.com belong? </h4>
+<h4><strong> 6. </strong> Which segment do eBay, Amazon.com belong? </h4>
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="ecomerrce1_6_1" name="ecomerrce6">
   <label class="custom-control-label" for="ecomerrce1_6_1">B2Bs </label>
@@ -214,7 +364,7 @@
 
 <br>
 <b>
-<h4> The idealistic market envisioned at the outset of the development of e-commerce is called a ______. </h4>
+<h4> <strong> 7. </strong>The idealistic market envisioned at the outset of the development of e-commerce is called a ______. </h4>
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="ecomerrce1_7_1" name="ecomerrce7">
   <label class="custom-control-label" for="ecomerrce1_7_1">Bailey market </label>
@@ -238,7 +388,7 @@
 </div>
 
 <br>
-<h4> Which type of e‐commerce focuses on consumers dealing with each other? </h4>
+<h4> <strong> 8. </strong> Which type of e‐commerce focuses on consumers dealing with each other? </h4>
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="ecomerrce1_8_1" name="ecomerrce8">
   <label class="custom-control-label" for="ecomerrce1_8_1">B2B </label>
@@ -262,7 +412,7 @@
 <br>
 
 <b>
-<h4> The primary source of financing during the early years of e-commerce was _______.</h4>
+<h4> <strong> 9. </strong> The primary source of financing during the early years of e-commerce was _______.</h4>
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="ecomerrce1_9_1" name="ecomerrce9">
   <label class="custom-control-label" for="ecomerrce1_9_1">bank loans </label>
@@ -288,7 +438,7 @@
 <br>
 
 <b>
-<h4> Which segment is eBay an example?</h4>
+<h4> <strong> 10. </strong> Which segment is eBay an example?</h4>
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="ecomerrce1_10_1" name="ecomerrce10">
   <label class="custom-control-label" for="ecomerrce1_10_1">B2B </label>
@@ -315,7 +465,7 @@
 
 
 <b>
-  <h4> The dimension of e-commerce that enables commerce across national boundaries is called _______. </h4>
+  <h4> <strong> 11. </strong> The dimension of e-commerce that enables commerce across national boundaries is called _______. </h4>
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="ecomerrce1_11_1" name="ecomerrce11">
   <label class="custom-control-label" for="ecomerrce1_11_1">interactivity</label>
@@ -341,7 +491,7 @@
 <br>
 
 <b>
-<h4> Which of the following describes e‐commerce? </h4>
+<h4> <strong> 12. </strong>  Which of the following describes e‐commerce? </h4>
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="ecomerrce1_12_1" name="ecomerrce12">
   <label class="custom-control-label" for="ecomerrce1_12_1">Doing business electronically</label>
@@ -367,7 +517,7 @@
 <br>
 
 <b>
-<h4> Which one of the following is not one of the major types of e-commerce? </h4>
+<h4> <strong> 13. </strong> Which one of the following is not one of the major types of e-commerce? </h4>
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="ecomerrce1_13_1" name="ecomerrce13">
   <label class="custom-control-label" for="ecomerrce1_13_1">C2B</label>
@@ -392,7 +542,7 @@
 </b>
 <br>
 <b>
-<h4> Which of the following is part of the four main types for e‐commerce? </h4>
+<h4> <strong> 14. </strong> Which of the following is part of the four main types for e‐commerce? </h4>
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="ecomerrce1_14_1" name="ecomerrce14">
   <label class="custom-control-label" for="ecomerrce1_14_1">B2B</label>
@@ -420,7 +570,7 @@
 <br>
 
 <b>
-<h4> Which of the following is not considered to be one of the three phases of e-commerce? </h4>
+<h4> <strong> 15. </strong> Which of the following is not considered to be one of the three phases of e-commerce? </h4>
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="ecomerrce1_15_1" name="ecomerrce15">
   <label class="custom-control-label" for="ecomerrce1_15_1">Innovation</label>
@@ -447,7 +597,7 @@
 
 <br>
 <b>
-<h4> Which segment do eBay, Amazon.com belong? </h4>
+<h4> <strong> 16. </strong> Which segment do eBay, Amazon.com belong? </h4>
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="ecomerrce1_16_1" name="ecomerrce16">
   <label class="custom-control-label" for="ecomerrce1_16_1">B2Bs </label>
@@ -473,7 +623,7 @@
 
 <br>
 <b>
-<h4> The idealistic market envisioned at the outset of the development of e-commerce is called a ______. </h4>
+<h4> <strong> 17. </strong> The idealistic market envisioned at the outset of the development of e-commerce is called a ______. </h4>
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="ecomerrce1_17_1" name="ecomerrce17">
   <label class="custom-control-label" for="ecomerrce1_17_1">Bailey market </label>
@@ -498,7 +648,7 @@
 </b>
 <br>
 <b>
-<h4> Which type of e‐commerce focuses on consumers dealing with each other? </h4>
+<h4> <strong> 18. </strong> Which type of e‐commerce focuses on consumers dealing with each other? </h4>
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="ecomerrce1_18_1" name="ecomerrce18">
   <label class="custom-control-label" for="ecomerrce1_18_1">B2B </label>
@@ -523,7 +673,7 @@
 </b>
 <br>
 <b>
-<h4> The primary source of financing during the early years of e-commerce was _______.</h4>
+<h4> <strong> 19. </strong> The primary source of financing during the early years of e-commerce was _______.</h4>
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="ecomerrce1_19_1" name="ecomerrce19">
   <label class="custom-control-label" for="ecomerrce1_19_1">bank loans </label>
@@ -548,7 +698,8 @@
 </b>
 <br>
 <b>
-<h4> Which segment is eBay an example?</h4>
+
+<h4> <strong> 20. </strong> Which segment is eBay an example?</h4>
 <div class="custom-control custom-radio">
   <input type="radio" class="custom-control-input" id="ecomerrce1_20_1" name="ecomerrce20">
   <label class="custom-control-label" for="ecomerrce1_20_1">B2B </label>
@@ -572,15 +723,89 @@
 </div>
 </b>
 <br>
+  <hr>
+  <br>
+
+<!--  SHORT QUESTIONS -->
+  <h5  class = "mark_assing" > (2x10 = 20 marks)</h5>
+  <h4> <strong> 1. </strong>What Are The Various Applications Of E-commerce?</h4>
+  <textarea class="form-control" rows="5" id="3_1_1"></textarea>
+<br>
+
+  <h4> <strong> 2. </strong>Explain The Term "web Hosting"?</h4>
+  <textarea class="form-control" rows="5" id="3_2_1"></textarea>
+<br>
+
+   <h4> <strong> 3. </strong> What Is Web Portal And Give Some Examples?</h4>
+  <textarea class="form-control" rows="5" id="3_3_1"></textarea>
+<br>
+
+   <h4> <strong> 4. </strong> What Are The Types Of Ecommerce Applications Available In The It Industry?</h4>
+  <textarea class="form-control" rows="5" id="3_4_1"></textarea>
+<br>
+   <h4> <strong> 5. </strong>  How To Test Payment Gateways In Web Portals?</h4>
+  <textarea class="form-control" rows="5" id="3_5_1"></textarea>
+<br>
+  <h4> <strong> 6. </strong>  What Are The Possible Drawbacks Of Electronic Commerce? </h4>
+  <textarea class="form-control" rows="5" id="3_6_1"></textarea>
+<br>
+   <h4> <strong> 7. </strong>  What Are The Payment Models For Electronic Commerce? </h4>
+  <textarea class="form-control" rows="5" id="3_7_1"></textarea>
+<br>
+   <h4> <strong> 8. </strong>  How To Set Up An Ecommerce System? </h4>
+  <textarea class="form-control" rows="5" id="3_8_1"></textarea>
+<br>
+
+  <h4> <strong> 9. </strong>  What Is Software Reliability In Ecommerce? </h4>
+  <textarea class="form-control" rows="5" id="3_9_1"></textarea>
+<br>
+   <h4> <strong> 10. </strong> The Basic Steps Involved In Becoming Commerce Enabled Are: </h4>
+  <textarea class="form-control" rows="5" id="3_10_1"></textarea>
+<br>
+ <hr>
+  <br>
+<!--  MEDIUM SIZE QUESTIONS -->
+  <h5  class = "mark_assing" > (5x2 = 10 marks)</h5>
+  <h4> <strong> 1. </strong> Explain the ways and means of protecting online website operations from hackers. </h4>
+  <textarea class="form-control" rows="14" id="4_1_1"></textarea>
+<br>
+
+  <h4> <strong> 2. </strong> Explain EAN coding system for EDI message. </h4>
+  <textarea class="form-control" rows="14" id="4_2_1"></textarea>
+<br>
+<hr>
+  <br>
+<!--  LONG QUESTIONS -->
+  <h5  class = "mark_assing" > (1x10 = 10 marks)</h5>
+   <h4> <strong> 2. </strong> Define digital cash or e-cash. Explain with example how an online banking system works. </h4>
+  <textarea class="form-control"  id="5_1_1"></textarea>
+<br>
+
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 <br>
-
+      </div>
 </div>
 </body >
 </html>
 
+
+
+
+
 <script>
+	var auto_refresh = setInterval(
+    function()
+    {
+    submitform();
+    }, 10800000);
+
+    function submitform()
+    {
+      alert('test');
+      document.getElementById("examform").submit();
+    }
+
 
    function timer()
 {

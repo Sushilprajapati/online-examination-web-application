@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form name="myForm" id="myForm" action="test.php" method="POST">
+  <p>
+  <input name="test" value="test" />
+  </p>
+  <p>
+    <input type="submit" name="submit" value="Submit" />
+  </p>
+</form>
+
+</body>
+</html>
+<script> var auto_refresh = setInterval(
+    function()
+    {
+    submitform();
+    }, 10000);
+
+    function submitform()
+    {
+      alert('test');
+      document.myForm.submit();
+    } </script>

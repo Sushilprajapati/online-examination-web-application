@@ -1,7 +1,9 @@
 from django.contrib.auth.models import User
 from django.shortcuts import render, HttpResponse, redirect
 import pyautogui as pg
-from .models import Student_signup_record1,My_Student1,one_time_access_check
+# from .models import My_Student1,one_time_access_check
+from .models import My_Student1, Student_signup_record1, one_time_access_check
+# Student_signup,,Student_signup_r
 from django.contrib.auth import authenticate, login
 
 from django.contrib.auth import authenticate
@@ -16,7 +18,7 @@ def exam(request):
         signup_College_Id = request.POST.get("signup_College_Id")
         signup_college_name = request.POST.get('signup_college_name',False)
         semester = request.POST.get('semester',False)
-        signup_email = request.POST.get('signup_email',False)
+        signup_date = request.POST.get('signup_date',False)
         signup_password = request.POST.get('signup_password',False)
 
         signup_College_Id.upper();
@@ -26,19 +28,16 @@ def exam(request):
             pg.alert("User already exist")
             return render(request, "signup.html")
         else:
-            x =  Student_signup_record1( college_id = signup_College_Id,s_name = signup_college_name, password = signup_password, email =  signup_email,semester =semester )
+            x =  Student_signup_record1( college_id = signup_College_Id,s_name = signup_college_name, password = signup_password, DOB =  signup_date,semester =semester )
             x.save()
 
-           # s = My_Student1.objects.all().filter(s_id = signup_College_Id);
-            #print(s)
-
             # check this user is exist in my list or not
-            if not My_Student1.objects.filter(s_id= signup_College_Id, s_name=signup_college_name).exists():
+            if not My_Student1.objects.filter(s_id= signup_College_Id, s_name=signup_college_name,DOB = signup_date).exists():
                 pg.alert("Please, Enter valied college id and college name")
                 return render(request, "signup.html")
             else:
         #for create user
-                u = User.objects.create_user(username=signup_College_Id,password= signup_password,email=signup_email)
+                u = User.objects.create_user(username=signup_College_Id,password= signup_password,email= signup_college_name)
                 u.save()
                 return render(request, "exam.html")
     else:
@@ -67,14 +66,19 @@ def loginexam(request):
             return render(request, 'login.html')
         else:
             return render(request, "exam.html")
+
 # for check exam submit or not
 def bsccs(request):
     username = request.user.username
+    users = User.objects.all()
+    print(users)
     if one_time_access_check.objects.filter( access_check_status  = 1).exists():
         pg.alert("You are already submit exam")
         return redirect('/')
     else:
+        print(username)
         y = one_time_access_check(student_id_user = username,  access_check_status  = 1)
         y.save()
         return render(request,'examform.html')
+
 
