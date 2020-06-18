@@ -148,13 +148,13 @@ body {
         <div class="form-group">
 			<div class="input-group">
 				<span class="input-group-addon"><i class="fa fa-user"></i></span>
-				<input type="text" class="form-control" name="signup_College_Id" placeholder="College Id" required="required">
+				<input type="text" class="form-control" name="signup_College_Id" id = "s_college_id" placeholder="College Id" required="required">
 			</div>
         </div>
   <div class="form-group">
 			<div class="input-group">
 				<span class="input-group-addon"><i class="fa fa-user"></i></span>
-				<input type="text" class="form-control" name="signup_college_name" placeholder="Username" required="required">
+				<input type="text" class="form-control" name="signup_college_name" id = "s_college_name" placeholder="Username" required="required">
 			</div>
         </div>
         <div class="form-group">
@@ -188,7 +188,7 @@ body {
         </div>
 
 		<div class="form-group">
-            <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+            <button type="submit" class="btn btn-primary btn-lg" >Sign Up</button>
         </div>
     </form>
 </div>
@@ -203,6 +203,11 @@ body {
 		var conf_pas= document.getElementById("confirm_pass").value;
 		x = document.getElementById("password1");
 		y = document.getElementById("password2");
+		var s_college_id = document.getElementById("s_college_id").value;
+		var s_college_name =  document.getElementById("s_college_name").value;
+		 document.getElementById("s_college_id").value =  s_college_id.toUpperCase();
+		 document.getElementById("s_college_name").value =   s_college_name.toUpperCase();
+
 		if(newpass == "")
 		{
 
@@ -225,5 +230,6 @@ body {
 			y.innerHTML = " **Password does not match";
 			return false;
 		}
+
 	}
 </script>

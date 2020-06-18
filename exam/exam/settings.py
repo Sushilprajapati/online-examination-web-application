@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    #'GALLERY.apps.GalleryConfig',
+    'IMAGE_G.apps.ImageGConfig',
     'SIGNUP1.apps.Signup1Config',
     #'SIGNUP.apps.SignupConfig',
    # 'MYSTOREDATA.apps.MystoredataConfig',
@@ -129,3 +131,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
+
+# add for image in gallary
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_URL = '/media/'

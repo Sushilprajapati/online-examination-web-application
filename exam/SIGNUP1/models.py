@@ -3,7 +3,7 @@ from datetime import datetime
 import datetime
 
 class My_Student1(models.Model):
-    s_id = models.CharField(primary_key=True,max_length=15, null=False,unique=True)
+    s_id = models.CharField(primary_key=True,max_length=15, null=False)
     s_name = models.CharField(max_length=20,null=False)
     course = models.CharField(max_length=20,null=False)
     semester = models.IntegerField(null=False)
@@ -17,7 +17,7 @@ def __str__(self):
 
 #other add , student submisssion
 class Student_signup_record1(models.Model):
-    college_id = models.CharField(primary_key=True,max_length=15,unique=True)
+    college_id = models.CharField(primary_key=True,max_length=15)
     s_name = models.CharField(max_length=20,null=False)
     semester = models.IntegerField()
     email = models.CharField(max_length=40,unique=True,null=False)
@@ -26,4 +26,9 @@ class Student_signup_record1(models.Model):
 #for show id in /admin
 def __str__(self):
     return self.college_id
+
+class one_time_access_check(models.Model):
+    student_id_user =  models.CharField(primary_key=True, max_length=15)
+    access_check_status =  models.IntegerField()
+
 

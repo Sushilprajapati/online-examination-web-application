@@ -40,6 +40,7 @@
         font-size: 15px;
         font-weight: bold;
     }
+
 </style>
 </head>
 <body>
@@ -67,17 +68,17 @@
 </nav>
 <!--login-->
 <div class="login-form ">
-    <form action="exam"  method="post">
+    <form action="loginexam"  method="post">
          {% csrf_token %}
         <h2 class="text-center">Log in</h2>
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Collage Id"  name="login_college_id" required="required">
+            <input type="text" class="form-control" id = "login_college_id" placeholder="Collage Id"  name="login_college_id" required="required">
         </div>
         <div class="form-group">
-            <input type="password" class="form-control" placeholder="Password" name="login_password" required="required">
+            <input type="password" class="form-control" id = "login_password" placeholder="Password" name="login_password" required="required">
         </div>
         <div class="form-group">
-            <button type="submit" class="btn btn-success btn-block">Log in</button>
+            <button type="submit" class="btn btn-success btn-block" onclick = "toconvertupeer()">Log in</button>
         </div>
         <div class="clearfix">
             <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
@@ -86,5 +87,24 @@
     </form>
 
 </div>
+
+ <div class="container-fluid px-0 " >
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item">
+      <img class="d-block w-100 " src="https://source.unsplash.com/1600x719/?beautiful nature" alt="Second slide">
+    </div>
+</div>
+   </div>
+ </div>
 </body>
 </html>
+<script>
+function toconvertupeer(){
+	    var login_college_id = document.getElementById("login_college_id").value;
+		var login_password =  document.getElementById("login_password").value;
+		 document.getElementById("login_college_id").value =  login_college_id.toUpperCase();
+		 document.getElementById("login_password").value =   login_password.toUpperCase();
+
+		 }
+</script>

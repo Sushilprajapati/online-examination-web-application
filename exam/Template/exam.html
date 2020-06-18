@@ -28,6 +28,11 @@
  {
  border: none;
  }
+ #exambuton
+ {
+ outline:0px;
+ margin-top:6px;
+ }
 </style>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -37,18 +42,38 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto" >
-            <li class="nav-item active">
-                <a class="nav-link" href="/">Exam <span class="sr-only">(current)</span></a>
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
             </li>
+            <li class="nav-item active">
+
+<div class="dropdown bg-dark">
+    <button type="button" class="bg-dark text-white" id=" exambuton" data-toggle="dropdown">
+        Exam
+<!--      Dropdown button-->
+    </button>
+    <div class="dropdown-menu">
+        <a class="dropdown-item" href="/SIGNUP1/examform">CSH 401- Graph Theory </a>
+        <a class="dropdown-item" href="/SIGNUP1/examform">CSH 402- Computer Graphics</a>
+        <a class="dropdown-item" href="/SIGNUP1/examform">CSH 403- E-Commerce</a>
+        <a class="dropdown-item" href="/SIGNUP1/examform">CSH 404- Environment & Ecology</a>
+        <a class="dropdown-item" href="/SIGNUP1/examform">CSH 405- Human Values & Ethics</a>
+
+    </div>
+  </div>
+
+            </li>
+<!--            -->
+<!--            -->
             <li class="nav-item">
                 <a class="nav-link" href="/GALLERY/gallery">Gallery</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/CONTACTUS/contactus">Contact Us</a>
             </li>
-             <li class="nav-item">
-                <a class="nav-link" href="/ABOUT/about">About</a>
-            </li>
+<!--             <li class="nav-item">-->
+<!--                <a class="nav-link" href="/ABOUT/about">About</a>-->
+<!--            </li>-->
         </ul>
     </div>
 </nav>
@@ -67,13 +92,13 @@
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100 " src="static/photo-1544654803-b69140b285a1.jpeg" alt="First slide">
+      <img class="d-block w-100 " src="https://source.unsplash.com/1600x719/?beautiful,color" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100 " src="https://source.unsplash.com/1600x719/?beautiful nature" alt="Second slide">
+      <img class="d-block w-100 " src="https://source.unsplash.com/1600x719/?color" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100 " src="static/photo-1573499506024-876dad7a8821.jpeg" alt="Third slide">
+      <img class="d-block w-100 " src="https://source.unsplash.com/1600x719/?lightcolor" alt="Third slide">
     </div>
   </div>
 </div>
