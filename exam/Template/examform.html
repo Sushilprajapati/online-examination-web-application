@@ -47,8 +47,8 @@
             width:24vw;
             height:20vw;
 		   position: fixed;
-		   bottom: 0vw;
-           right: .1vw;
+		   bottom: .32vw;
+           right: .4vw;
 		   color: red;
 	}
 #question_containar
@@ -87,18 +87,20 @@ color:blue;
       <h2><strong>NOTE:</strong> Attempt the following questions.</h2>
 	<hr>
       <div id = "question_containar">
-<form   action="bsccs" id = "examform">
+<!--        <form   action="Takescreenshort" id = "takescreenshort"> </form>-->
+<form  action = "Examformsubmit" method="post"  id = "examform" onselectstart="return false;" onpaste="return false;">
+ {% csrf_token %}
   <!-- Group of default radios - option 1 -->
 <!--  TRUE FALSE QUESTIONS-->
 <h5  class = "mark_assing" > (1x10 = 10 marks)</h5>
 
-  <h4> <strong> 1. </strong>The fundamentals of Marketing change when it is conducted online.</h4>
+  <h4 > <strong> 1. </strong>The fundamentals of Marketing change when it is conducted online.</h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce0_1_1" name="ecomerrce20">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_1_1" name="ecomerrce000" value = 1>
   <label class="custom-control-label" for="ecomerrce0_1_1">True </label>
 </div>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce0_1_2" name="ecomerrce20" >
+  <input type="radio" class="custom-control-input" id="ecomerrce0_1_2" name="ecomerrce000" value = 0 >
   <label class="custom-control-label" for="ecomerrce0_1_2">False </label>
 </div>
   <br>
@@ -106,55 +108,55 @@ color:blue;
 
   <h4> <strong> 2. </strong>The Internet allows mass marketing to be replaced by customized marketing.</h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce0_2_1" name="ecomerrce20">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_2_1" name="ecomerrce001" value = 1>
   <label class="custom-control-label" for="ecomerrce0_2_1">True </label>
 </div>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce0_2_2" name="ecomerrce20" >
+  <input type="radio" class="custom-control-input" id="ecomerrce0_2_2" name="ecomerrce001"  value = 0>
   <label class="custom-control-label" for="ecomerrce0_2_2">False </label>
 </div>
   <br>
 
   <h4> <strong> 3. </strong> With the increased popularity of cybermederiaries in the automotive retail industry the traditional dealer is in tremendous danger of being displaced or disinteremediated.</h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce0_3_1" name="ecomerrce20">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_3_1" name="ecomerrce002" value = 1>
   <label class="custom-control-label" for="ecomerrce0_3_1">True </label>
 </div>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce0_3_2" name="ecomerrce20" >
+  <input type="radio" class="custom-control-input" id="ecomerrce0_3_2" name="ecomerrce002"  value = 0>
   <label class="custom-control-label" for="ecomerrce0_3_2">False </label>
 </div>
   <br>
 
   <h4> <strong> 4. </strong>The Internet further separates a business from its customers.</h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce0_4_1" name="ecomerrce20">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_4_1" name="ecomerrce003" value = 1>
   <label class="custom-control-label" for="ecomerrce0_4_1">True </label>
 </div>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce0_4_2" name="ecomerrce20" >
+  <input type="radio" class="custom-control-input" id="ecomerrce0_4_2" name="ecomerrce003" value = 0>
   <label class="custom-control-label" for="ecomerrce0_4_2">False </label>
 </div>
   <br>
 
    <h4> <strong> 5. </strong> Consumers have increased choice online.</h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce0_5_1" name="ecomerrce20">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_5_1" name="ecomerrce004" value = 1>
   <label class="custom-control-label" for="ecomerrce0_5_1">True </label>
 </div>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce0_5_2" name="ecomerrce20" >
+  <input type="radio" class="custom-control-input" id="ecomerrce0_5_2" name="ecomerrce004" value = 0>
   <label class="custom-control-label" for="ecomerrce0_5_2">False </label>
 </div>
   <br>
 
    <h4> <strong> 6. </strong>  E-commerce is simply the buying and selling of goods online.</h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce0_6_1" name="ecomerrce20">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_6_1" name="ecomerrce005" value = 1>
   <label class="custom-control-label" for="ecomerrce0_6_1">True </label>
 </div>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce0_6_2" name="ecomerrce20" >
+  <input type="radio" class="custom-control-input" id="ecomerrce0_6_2" name="ecomerrce005" value = 0>
   <label class="custom-control-label" for="ecomerrce0_6_2">False </label>
 </div>
   <br>
@@ -162,22 +164,22 @@ color:blue;
 
    <h4> <strong> 7. </strong>  Amazon.com is a good example of a business-to-business E-commerce model.</h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce0_7_1" name="ecomerrce20">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_7_1" name="ecomerrce006" value = 1>
   <label class="custom-control-label" for="ecomerrce0_7_1">True </label>
 </div>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce0_7_2" name="ecomerrce20" >
+  <input type="radio" class="custom-control-input" id="ecomerrce0_7_2" name="ecomerrce006"  value = 0>
   <label class="custom-control-label" for="ecomerrce0_7_2">False </label>
 </div>
   <br>
 
    <h4> <strong> 8. </strong>  A traditional business (such as Wal-Mart) that have evolved online and now have both an online and a physical presence are referred to as "clicks-and-mortar".</h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce0_8_1" name="ecomerrce20">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_8_1" name="ecomerrce007" value = 1>
   <label class="custom-control-label" for="ecomerrce0_8_1">True </label>
 </div>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce0_8_2" name="ecomerrce20" >
+  <input type="radio" class="custom-control-input" id="ecomerrce0_8_2" name="ecomerrce007" value = 0>
   <label class="custom-control-label" for="ecomerrce0_8_2">False </label>
 </div>
   <br>
@@ -185,22 +187,22 @@ color:blue;
 
    <h4> <strong> 9. </strong>   E-tail sites often act as gateways or entry points to the Web.</h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce0_9_1" name="ecomerrce20">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_9_1" name="ecomerrce008" value = 1>
   <label class="custom-control-label" for="ecomerrce0_9_1">True </label>
 </div>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce0_9_2" name="ecomerrce20" >
+  <input type="radio" class="custom-control-input" id="ecomerrce0_9_2" name="ecomerrce008" value = 0>
   <label class="custom-control-label" for="ecomerrce0_9_2">False </label>
 </div>
   <br>
 
     <h4> <strong> 10. </strong> Online classifieds are good examples of a consumer-to-consumer E-commerce model.</h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce0_10_1" name="ecomerrce20">
+  <input type="radio" class="custom-control-input" id="ecomerrce0_10_1" name="ecomerrce009" value = 1>
   <label class="custom-control-label" for="ecomerrce0_10_1">True </label>
 </div>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce0_10_2" name="ecomerrce20" >
+  <input type="radio" class="custom-control-input" id="ecomerrce0_10_2" name="ecomerrce009" value = 0>
   <label class="custom-control-label" for="ecomerrce0_10_2">False </label>
 </div>
   <br>
@@ -211,24 +213,24 @@ color:blue;
   <h5  class = "mark_assing" > (1x20 = 20 marks)</h5>
   <b> <h4>  <strong> 1. </strong> The dimension of e-commerce that enables commerce across national boundaries is called _______. </h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_1_1" name="ecomerrce1">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_1_1" name="ecomerrce1" value="1">
   <label class="custom-control-label" for="ecomerrce1_1_1">interactivity</label>
 </div>
 
 <!-- Group of default radios - option 2 -->
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_1_2" name="ecomerrce1" >
+  <input type="radio" class="custom-control-input" id="ecomerrce1_1_2" name="ecomerrce1" value="2">
   <label class="custom-control-label" for="ecomerrce1_1_2">global reach</label>
 </div>
 
 <!-- Group of default radios - option 3 -->
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_1_3" name="ecomerrce1">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_1_3" name="ecomerrce1" value="3">
   <label class="custom-control-label" for="ecomerrce1_1_3">richness</label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_1_4" name="ecomerrce1">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_1_4" name="ecomerrce1" value="4">
   <label class="custom-control-label" for="ecomerrce1_1_4">ubiquity</label>
 </div>
 <br>
@@ -237,48 +239,48 @@ color:blue;
 <b>
 <h4><strong> 2. </strong> Which of the following describes e‐commerce? </h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_2_1" name="ecomerrce2">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_2_1" name="ecomerrce2" value="1">
   <label class="custom-control-label" for="ecomerrce1_2_1">Doing business electronically</label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_2_2" name="ecomerrce2" >
+  <input type="radio" class="custom-control-input" id="ecomerrce1_2_2" name="ecomerrce2" value="2">
   <label class="custom-control-label" for="ecomerrce1_2_2">Doing business</label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_2_3" name="ecomerrce2">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_2_3" name="ecomerrce2" value="3">
   <label class="custom-control-label" for="ecomerrce1_2_3">Sale of goods</label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_2_4" name="ecomerrce2">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_2_4" name="ecomerrce2" value="4">
   <label class="custom-control-label" for="ecomerrce1_2_4">All of the above</label>
 </div></b>
 <br>
 <b>
 <h4> <strong> 3. </strong> Which one of the following is not one of the major types of e-commerce? </h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_3_1" name="ecomerrce3">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_3_1" name="ecomerrce3" value="1">
   <label class="custom-control-label" for="ecomerrce1_3_1">C2B</label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_3_2" name="ecomerrce3" >
+  <input type="radio" class="custom-control-input" id="ecomerrce1_3_2" name="ecomerrce3" value="2">
   <label class="custom-control-label" for="ecomerrce1_3_2">B2C </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_3_3" name="ecomerrce3">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_3_3" name="ecomerrce3" value="3">
   <label class="custom-control-label" for="ecomerrce1_3_3">B2B </label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_3_4" name="ecomerrce3">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_3_4" name="ecomerrce3" value="4">
   <label class="custom-control-label" for="ecomerrce1_3_4">C2C</label>
 </div>
 </b>
@@ -286,24 +288,24 @@ color:blue;
 <b>
 <h4> <strong> 4. </strong> Which of the following is part of the four main types for e‐commerce? </h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_4_1" name="ecomerrce4">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_4_1" name="ecomerrce4" value="1">
   <label class="custom-control-label" for="ecomerrce1_4_1">B2B</label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_4_2" name="ecomerrce4" >
+  <input type="radio" class="custom-control-input" id="ecomerrce1_4_2" name="ecomerrce4" value="2">
   <label class="custom-control-label" for="ecomerrce1_4_2">B2C </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_4_3" name="ecomerrce4">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_4_3" name="ecomerrce4" value="3">
   <label class="custom-control-label" for="ecomerrce1_4_3">C2B</label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_4_4" name="ecomerrce4">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_4_4" name="ecomerrce4" value="4">
   <label class="custom-control-label" for="ecomerrce1_4_4">All of the above</label>
 </div>
 
@@ -313,24 +315,24 @@ color:blue;
 <b>
 <h4><strong> 5. </strong> Which of the following is not considered to be one of the three phases of e-commerce? </h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_5_1" name="ecomerrce5">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_5_1" name="ecomerrce5" value="1">
   <label class="custom-control-label" for="ecomerrce1_5_1">Innovation</label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_5_2" name="ecomerrce5" >
+  <input type="radio" class="custom-control-input" id="ecomerrce1_5_2" name="ecomerrce5" value="2">
   <label class="custom-control-label" for="ecomerrce1_5_2">Consolidation </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_5_3" name="ecomerrce5">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_5_3" name="ecomerrce5" value="3">
   <label class="custom-control-label" for="ecomerrce1_5_3">Preservation</label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_5_4" name="ecomerrce5">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_5_4" name="ecomerrce5" value="4">
   <label class="custom-control-label" for="ecomerrce1_5_4">Reinvention</label>
 </div>
 </b>
@@ -340,24 +342,24 @@ color:blue;
 <b>
 <h4><strong> 6. </strong> Which segment do eBay, Amazon.com belong? </h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_6_1" name="ecomerrce6">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_6_1" name="ecomerrce6" value="1">
   <label class="custom-control-label" for="ecomerrce1_6_1">B2Bs </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_6_2" name="ecomerrce6" >
+  <input type="radio" class="custom-control-input" id="ecomerrce1_6_2" name="ecomerrce6" value="2">
   <label class="custom-control-label" for="ecomerrce1_6_2">B2Cs </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_6_3" name="ecomerrce6">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_6_3" name="ecomerrce6" value="3">
   <label class="custom-control-label" for="ecomerrce1_6_3">C2Bs</label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_6_4" name="ecomerrce6">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_6_4" name="ecomerrce6" value="4">
   <label class="custom-control-label" for="ecomerrce1_6_4">C2Cs</label>
 </div>
 </b>
@@ -366,46 +368,46 @@ color:blue;
 <b>
 <h4> <strong> 7. </strong>The idealistic market envisioned at the outset of the development of e-commerce is called a ______. </h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_7_1" name="ecomerrce7">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_7_1" name="ecomerrce7" value="1">
   <label class="custom-control-label" for="ecomerrce1_7_1">Bailey market </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_7_2" name="ecomerrce7" >
+  <input type="radio" class="custom-control-input" id="ecomerrce1_7_2" name="ecomerrce7" value="2">
   <label class="custom-control-label" for="ecomerrce1_7_2">Baxter market </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_7_3" name="ecomerrce7">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_7_3" name="ecomerrce7" value="3">
   <label class="custom-control-label" for="ecomerrce1_7_3">Bergman market</label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_7_4" name="ecomerrce7">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_7_4" name="ecomerrce7" value="4">
   <label class="custom-control-label" for="ecomerrce1_7_4">Bertrand market</label>
 </div>
 
 <br>
 <h4> <strong> 8. </strong> Which type of e‐commerce focuses on consumers dealing with each other? </h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_8_1" name="ecomerrce8">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_8_1" name="ecomerrce8" value="1">
   <label class="custom-control-label" for="ecomerrce1_8_1">B2B </label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_8_2" name="ecomerrce8" >
+  <input type="radio" class="custom-control-input" id="ecomerrce1_8_2" name="ecomerrce8" value="2">
   <label class="custom-control-label" for="ecomerrce1_8_2">B2C </label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_8_3" name="ecomerrce8">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_8_3" name="ecomerrce8" value="3">
   <label class="custom-control-label" for="ecomerrce1_8_3">C2B</label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_8_4" name="ecomerrce8">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_8_4" name="ecomerrce8" value="4">
   <label class="custom-control-label" for="ecomerrce1_8_4">C2C</label>
 </div>
 </b>
@@ -414,24 +416,24 @@ color:blue;
 <b>
 <h4> <strong> 9. </strong> The primary source of financing during the early years of e-commerce was _______.</h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_9_1" name="ecomerrce9">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_9_1" name="ecomerrce9" value="1">
   <label class="custom-control-label" for="ecomerrce1_9_1">bank loans </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_9_2" name="ecomerrce9" >
+  <input type="radio" class="custom-control-input" id="ecomerrce1_9_2" name="ecomerrce9" value="2">
   <label class="custom-control-label" for="ecomerrce1_9_2">large retail firms </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_9_3" name="ecomerrce9">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_9_3" name="ecomerrce9" value="3">
   <label class="custom-control-label" for="ecomerrce1_9_3">venture capital funds </label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_9_4" name="ecomerrce9">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_9_4" name="ecomerrce9" value="4">
   <label class="custom-control-label" for="ecomerrce1_9_4">initial public offerings</label>
 </div>
 </b>
@@ -440,24 +442,24 @@ color:blue;
 <b>
 <h4> <strong> 10. </strong> Which segment is eBay an example?</h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_10_1" name="ecomerrce10">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_10_1" name="ecomerrce10" value="1">
   <label class="custom-control-label" for="ecomerrce1_10_1">B2B </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_10_2" name="ecomerrce10" >
+  <input type="radio" class="custom-control-input" id="ecomerrce1_10_2" name="ecomerrce10" value="2">
   <label class="custom-control-label" for="ecomerrce1_10_2">C2B </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_10_3" name="ecomerrce10">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_10_3" name="ecomerrce10" value="3">
   <label class="custom-control-label" for="ecomerrce1_10_3">C2C </label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_10_4" name="ecomerrce10">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_10_4" name="ecomerrce10" value="4">
   <label class="custom-control-label" for="ecomerrce1_10_4">None of the above</label>
 </div>
 </b>
@@ -467,24 +469,24 @@ color:blue;
 <b>
   <h4> <strong> 11. </strong> The dimension of e-commerce that enables commerce across national boundaries is called _______. </h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_11_1" name="ecomerrce11">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_11_1" name="ecomerrce11" value="1">
   <label class="custom-control-label" for="ecomerrce1_11_1">interactivity</label>
 </div>
 
 <!-- Group of default radios - option 2 -->
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_11_2" name="ecomerrce11" >
+  <input type="radio" class="custom-control-input" id="ecomerrce1_11_2" name="ecomerrce11" value="2">
   <label class="custom-control-label" for="ecomerrce1_11_2">global reach</label>
 </div>
 
 <!-- Group of default radios - option 3 -->
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_11_3" name="ecomerrce11">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_11_3" name="ecomerrce11" value="3">
   <label class="custom-control-label" for="ecomerrce1_11_3">richness</label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_11_4" name="ecomerrce11">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_11_4" name="ecomerrce11" value="4">
   <label class="custom-control-label" for="ecomerrce1_11_4">ubiquity</label>
 </div>
 </b>
@@ -493,24 +495,24 @@ color:blue;
 <b>
 <h4> <strong> 12. </strong>  Which of the following describes e‐commerce? </h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_12_1" name="ecomerrce12">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_12_1" name="ecomerrce12" value="1">
   <label class="custom-control-label" for="ecomerrce1_12_1">Doing business electronically</label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_12_2" name="ecomerrce12" >
+  <input type="radio" class="custom-control-input" id="ecomerrce1_12_2" name="ecomerrce12" value="2">
   <label class="custom-control-label" for="ecomerrce1_12_2">Doing business</label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_12_3" name="ecomerrce12">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_12_3" name="ecomerrce12" value="3">
   <label class="custom-control-label" for="ecomerrce1_12_3">Sale of goods</label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_12_4" name="ecomerrce12">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_12_4" name="ecomerrce12" value="4">
   <label class="custom-control-label" for="ecomerrce1_12_4">All of the above</label>
 </div>
 </b>
@@ -519,24 +521,24 @@ color:blue;
 <b>
 <h4> <strong> 13. </strong> Which one of the following is not one of the major types of e-commerce? </h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_13_1" name="ecomerrce13">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_13_1" name="ecomerrce13" value="1">
   <label class="custom-control-label" for="ecomerrce1_13_1">C2B</label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_13_2" name="ecomerrce13" >
+  <input type="radio" class="custom-control-input" id="ecomerrce1_13_2" name="ecomerrce13" value="2">
   <label class="custom-control-label" for="ecomerrce1_13_2">B2C </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_13_3" name="ecomerrce13">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_13_3" name="ecomerrce13" value="3">
   <label class="custom-control-label" for="ecomerrce1_13_3">B2B </label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_13_4" name="ecomerrce13">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_13_4" name="ecomerrce13" value="4">
   <label class="custom-control-label" for="ecomerrce1_13_4">C2C</label>
 </div>
 </b>
@@ -544,24 +546,24 @@ color:blue;
 <b>
 <h4> <strong> 14. </strong> Which of the following is part of the four main types for e‐commerce? </h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_14_1" name="ecomerrce14">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_14_1" name="ecomerrce14" value="1">
   <label class="custom-control-label" for="ecomerrce1_14_1">B2B</label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_14_2" name="ecomerrce14" >
+  <input type="radio" class="custom-control-input" id="ecomerrce1_14_2" name="ecomerrce14" value="2">
   <label class="custom-control-label" for="ecomerrce1_14_2">B2C </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_14_3" name="ecomerrce14">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_14_3" name="ecomerrce14" value="3">
   <label class="custom-control-label" for="ecomerrce1_14_3">C2B</label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_14_4" name="ecomerrce14">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_14_4" name="ecomerrce14" value="4">
   <label class="custom-control-label" for="ecomerrce1_14_4">All of the above</label>
 </div>
 
@@ -572,24 +574,24 @@ color:blue;
 <b>
 <h4> <strong> 15. </strong> Which of the following is not considered to be one of the three phases of e-commerce? </h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_15_1" name="ecomerrce15">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_15_1" name="ecomerrce15" value="1">
   <label class="custom-control-label" for="ecomerrce1_15_1">Innovation</label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_15_2" name="ecomerrce15" >
+  <input type="radio" class="custom-control-input" id="ecomerrce1_15_2" name="ecomerrce15" value="2">
   <label class="custom-control-label" for="ecomerrce1_15_2">Consolidation </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_15_3" name="ecomerrce15">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_15_3" name="ecomerrce15" value="3">
   <label class="custom-control-label" for="ecomerrce1_15_3">Preservation</label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_15_4" name="ecomerrce15">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_15_4" name="ecomerrce15" value="4">
   <label class="custom-control-label" for="ecomerrce1_15_4">Reinvention</label>
 </div>
 
@@ -599,24 +601,24 @@ color:blue;
 <b>
 <h4> <strong> 16. </strong> Which segment do eBay, Amazon.com belong? </h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_16_1" name="ecomerrce16">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_16_1" name="ecomerrce16" value="1">
   <label class="custom-control-label" for="ecomerrce1_16_1">B2Bs </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_16_2" name="ecomerrce16" >
+  <input type="radio" class="custom-control-input" id="ecomerrce1_16_2" name="ecomerrce16" value="2">
   <label class="custom-control-label" for="ecomerrce1_16_2">B2Cs </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_16_3" name="ecomerrce16">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_16_3" name="ecomerrce16" value="3">
   <label class="custom-control-label" for="ecomerrce1_16_3">C2Bs</label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_16_4" name="ecomerrce16">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_16_4" name="ecomerrce16" value="4">
   <label class="custom-control-label" for="ecomerrce1_16_4">C2Cs</label>
 </div>
 </b>
@@ -625,24 +627,24 @@ color:blue;
 <b>
 <h4> <strong> 17. </strong> The idealistic market envisioned at the outset of the development of e-commerce is called a ______. </h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_17_1" name="ecomerrce17">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_17_1" name="ecomerrce17" value="1">
   <label class="custom-control-label" for="ecomerrce1_17_1">Bailey market </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_17_2" name="ecomerrce17" >
+  <input type="radio" class="custom-control-input" id="ecomerrce1_17_2" name="ecomerrce17" value="2">
   <label class="custom-control-label" for="ecomerrce1_17_2">Baxter market </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_17_3" name="ecomerrce17">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_17_3" name="ecomerrce17" value="3">
   <label class="custom-control-label" for="ecomerrce1_17_3">Bergman market</label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_17_4" name="ecomerrce17">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_17_4" name="ecomerrce17" value="4">
   <label class="custom-control-label" for="ecomerrce1_17_4">Bertrand market</label>
 </div>
 </b>
@@ -650,24 +652,24 @@ color:blue;
 <b>
 <h4> <strong> 18. </strong> Which type of e‐commerce focuses on consumers dealing with each other? </h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_18_1" name="ecomerrce18">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_18_1" name="ecomerrce18" value="1">
   <label class="custom-control-label" for="ecomerrce1_18_1">B2B </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_18_2" name="ecomerrce18" >
+  <input type="radio" class="custom-control-input" id="ecomerrce1_18_2" name="ecomerrce18" value="2">
   <label class="custom-control-label" for="ecomerrce1_18_2">B2C </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_18_3" name="ecomerrce18">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_18_3" name="ecomerrce18" value="3">
   <label class="custom-control-label" for="ecomerrce1_18_3">C2B</label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_18_4" name="ecomerrce18">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_18_4" name="ecomerrce18" value="4">
   <label class="custom-control-label" for="ecomerrce1_18_4">C2C</label>
 </div>
 </b>
@@ -675,24 +677,24 @@ color:blue;
 <b>
 <h4> <strong> 19. </strong> The primary source of financing during the early years of e-commerce was _______.</h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_19_1" name="ecomerrce19">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_19_1" name="ecomerrce19" value="1">
   <label class="custom-control-label" for="ecomerrce1_19_1">bank loans </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_19_2" name="ecomerrce19" >
+  <input type="radio" class="custom-control-input" id="ecomerrce1_19_2" name="ecomerrce19" value="2">
   <label class="custom-control-label" for="ecomerrce1_19_2">large retail firms </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_19_3" name="ecomerrce19">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_19_3" name="ecomerrce19" value="3">
   <label class="custom-control-label" for="ecomerrce1_19_3">venture capital funds </label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_19_4" name="ecomerrce19">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_19_4" name="ecomerrce19" value="4">
   <label class="custom-control-label" for="ecomerrce1_19_4">initial public offerings</label>
 </div>
 </b>
@@ -701,24 +703,24 @@ color:blue;
 
 <h4> <strong> 20. </strong> Which segment is eBay an example?</h4>
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_20_1" name="ecomerrce20">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_20_1" name="ecomerrce20" value="1">
   <label class="custom-control-label" for="ecomerrce1_20_1">B2B </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_20_2" name="ecomerrce20" >
+  <input type="radio" class="custom-control-input" id="ecomerrce1_20_2" name="ecomerrce20" value="2">
   <label class="custom-control-label" for="ecomerrce1_20_2">C2B </label>
 </div>
 
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_20_3" name="ecomerrce20">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_20_3" name="ecomerrce20" value="3">
   <label class="custom-control-label" for="ecomerrce1_20_3">C2C </label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" id="ecomerrce1_20_4" name="ecomerrce20">
+  <input type="radio" class="custom-control-input" id="ecomerrce1_20_4" name="ecomerrce20" value="4">
   <label class="custom-control-label" for="ecomerrce1_20_4">None of the above</label>
 </div>
 </b>
@@ -729,56 +731,56 @@ color:blue;
 <!--  SHORT QUESTIONS -->
   <h5  class = "mark_assing" > (2x10 = 20 marks)</h5>
   <h4> <strong> 1. </strong>What Are The Various Applications Of E-commerce?</h4>
-  <textarea class="form-control" rows="5" id="3_1_1"></textarea>
+  <textarea class="form-control" rows="5" id="3_1_1" name="ecomerrce21"></textarea>
 <br>
 
   <h4> <strong> 2. </strong>Explain The Term "web Hosting"?</h4>
-  <textarea class="form-control" rows="5" id="3_2_1"></textarea>
+  <textarea class="form-control" rows="5" id="3_2_1" name="ecomerrce22"></textarea>
 <br>
 
    <h4> <strong> 3. </strong> What Is Web Portal And Give Some Examples?</h4>
-  <textarea class="form-control" rows="5" id="3_3_1"></textarea>
+  <textarea class="form-control" rows="5" id="3_3_1" name="ecomerrce23"></textarea>
 <br>
 
    <h4> <strong> 4. </strong> What Are The Types Of Ecommerce Applications Available In The It Industry?</h4>
-  <textarea class="form-control" rows="5" id="3_4_1"></textarea>
+  <textarea class="form-control" rows="5" id="3_4_1" name="ecomerrce24"></textarea>
 <br>
    <h4> <strong> 5. </strong>  How To Test Payment Gateways In Web Portals?</h4>
-  <textarea class="form-control" rows="5" id="3_5_1"></textarea>
+  <textarea class="form-control" rows="5" id="3_5_1" name="ecomerrce25"></textarea>
 <br>
   <h4> <strong> 6. </strong>  What Are The Possible Drawbacks Of Electronic Commerce? </h4>
-  <textarea class="form-control" rows="5" id="3_6_1"></textarea>
+  <textarea class="form-control" rows="5" id="3_6_1" name="ecomerrce26"></textarea>
 <br>
    <h4> <strong> 7. </strong>  What Are The Payment Models For Electronic Commerce? </h4>
-  <textarea class="form-control" rows="5" id="3_7_1"></textarea>
+  <textarea class="form-control" rows="5" id="3_7_1" name="ecomerrce27"></textarea>
 <br>
    <h4> <strong> 8. </strong>  How To Set Up An Ecommerce System? </h4>
-  <textarea class="form-control" rows="5" id="3_8_1"></textarea>
+  <textarea class="form-control" rows="5" id="3_8_1" name="ecomerrce28"></textarea>
 <br>
 
   <h4> <strong> 9. </strong>  What Is Software Reliability In Ecommerce? </h4>
-  <textarea class="form-control" rows="5" id="3_9_1"></textarea>
+  <textarea class="form-control" rows="5" id="3_9_1" name="ecomerrce29"></textarea>
 <br>
    <h4> <strong> 10. </strong> The Basic Steps Involved In Becoming Commerce Enabled Are: </h4>
-  <textarea class="form-control" rows="5" id="3_10_1"></textarea>
+  <textarea class="form-control" rows="5" id="3_10_1" name="ecomerrce30"></textarea>
 <br>
  <hr>
   <br>
 <!--  MEDIUM SIZE QUESTIONS -->
   <h5  class = "mark_assing" > (5x2 = 10 marks)</h5>
   <h4> <strong> 1. </strong> Explain the ways and means of protecting online website operations from hackers. </h4>
-  <textarea class="form-control" rows="14" id="4_1_1"></textarea>
+  <textarea class="form-control" rows="14" id="4_1_1" name="ecomerrce40"></textarea>
 <br>
 
   <h4> <strong> 2. </strong> Explain EAN coding system for EDI message. </h4>
-  <textarea class="form-control" rows="14" id="4_2_1"></textarea>
+  <textarea class="form-control" rows="14" id="4_2_1" name="ecomerrce41"></textarea>
 <br>
 <hr>
   <br>
 <!--  LONG QUESTIONS -->
   <h5  class = "mark_assing" > (1x10 = 10 marks)</h5>
-   <h4> <strong> 2. </strong> Define digital cash or e-cash. Explain with example how an online banking system works. </h4>
-  <textarea class="form-control"  id="5_1_1"></textarea>
+   <h4> <strong> 1. </strong> Define digital cash or e-cash. Explain with example how an online banking system works. </h4>
+  <textarea class="form-control"  id="5_1_1" name="ecomerrce50"></textarea>
 <br>
 
   <button type="submit" class="btn btn-primary">Submit</button>
@@ -786,8 +788,9 @@ color:blue;
 <br>
       </div>
 </div>
-</body >
-</html>
+
+
+
 
 
 

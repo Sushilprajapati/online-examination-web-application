@@ -36,4 +36,10 @@ class one_time_access_check(models.Model):
     student_id_user =  models.CharField(primary_key=True, max_length=15)
     access_check_status =  models.IntegerField()
 
-
+class Exam_result(models.Model):
+    Student_ID = models.CharField(primary_key=True,max_length=15)
+    True_false_result  = models.SlugField(null=True, blank=True)
+    Multiple_choice_result = models.CharField(max_length=8,null=True,blank=True)
+    Short_answer = models.CharField(max_length=600, null=True,blank=True)
+    Medium_answer = models.TextField(null=True,blank=True)
+    Long_answer = models.TextField(null=True,blank=True)
