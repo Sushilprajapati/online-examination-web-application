@@ -31,6 +31,7 @@ urlpatterns = [
     path('STUDENT_DATA/',include('STUDENT_DATA.urls')),
     path('IMAGE_G/',include('IMAGE_G.urls')),
     path('GALLERy1/', include('GALLERy1.urls')),
+    path('Game/', include('Game.urls')),
 
  ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 # urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_URL)

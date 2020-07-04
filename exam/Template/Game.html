@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mind game </title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!--    nav style from Home.html-->
+    <style>
+  #login_signup {
+  padding-right: 0;
+  padding-left: 0;
+  color:red;
+  text-align: right;
+ }
+ #signup_btn
+ {
+ border: none;
+ }
+ #login_btn
+ {
+ border: none;
+ }
+ #time_div
+	{
+
+		   position: fixed;
+		   top: 10vw;
+           right: 1.6vw;
+		   font-size:2vw;
+		   color: red;
+	}
+</style>
+<style>
+  button
+    {
+     width:8.8vw;
+     height:4vw;
+     font-size:3.1vw;
+     margin-left:1vw;
+     }
+     .button_div
+     {
+     display: none;
+     margin-top:12.8vw;
+     }
+     #mind_geme_h
+     {
+     margin-top:.5vw;
+     margin-bottom:2.8vw;
+     }
+
+
+</style>
+</head>
+<body onload="timer()">
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Sushil</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" >
+           <!-- <li class="nav-item active">
+                <a class="nav-link" href="/">Exam <span class="sr-only">(current)</span></a>
+            </li> -->
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="/IMAGE_G/gallery">Gallery</a>-->
+<!--            </li>-->
+             <li class="nav-item">
+                <a class="nav-link" href="/GALLERy1/gallery1">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Game/Game2">Game2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/CONTACTUS/contactus">Contact Us</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" href="/ABOUT/about">About</a>
+            </li>
+        </ul>
+<!--        {% block nav %}-->
+        <ul class="navbar-nav " id = "login_signup">
+                <li class="nav-item " class = "button" style="border:none;">
+                    <button type="button" class="btn btn-outline-secondary" id = "login_btn"> <a class="nav-link" href="/SIGNUP2/login">Login</a> </button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-secondary" id = "signup_btn"><a class="nav-link" href="/SIGNUP2/signup">Sign Up</a></button>
+                </li>
+        </ul>
+<!--{% endblock nav %}&ndash;&gt;-->
+    </div>
+</nav>
+
+<p id="time_div" >  </p>
+<div class="container-fluid px-0 " >
+
+
+     <div class="alert alert-success  alert-dismissible fade show" role="alert">
+        <strong>!</strong> Read what color is written not what is written
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button> </div>
+    <center><h1 id = "mind_geme_h"> Color Fool </h1>
+    <h3> Improve Concentration & Multi-Tasking</h3></center><br>
+    <center>
+        <center> <div id = "print_div"></div></center>
+
+    <center>
+    <div class = "button_div" id = "btn_div1"  >
+<button type="button" class="btn btn-primary active">Yellow</button>
+<button type="button" class="btn btn-success active">Black</button>
+<button type="button" class="btn btn-warning active">red</button>
+<button type="button" class="btn btn-danger active">Green</button>
+<button type="button" class="btn btn-dark active">Blue</button>
+        <br><br>
+<button type="button" class="btn btn-success active">Black</button>
+<button type="button" class="btn btn-dark active">Yellow</button>
+<button type="button" class="btn btn-danger active">Green</button>
+<button type="button" class="btn btn-primary active">Red</button>
+<button type="button" class="btn btn-warning active">Blue</button>
+        <br><br>
+
+<button type="button" class="btn btn-warning active">Red</button>
+<button type="button" class="btn btn-success active">Black</button>
+<button type="button" class="btn btn-dark active">Blue</button>
+<button type="button" class="btn btn-danger active">Green</button>
+<button type="button" class="btn btn-primary active">Yellow</button>
+        <br><br>
+<button type="button" class="btn btn-warning active">Blue</button>
+<button type="button" class="btn btn-primary active">Red</button>
+<button type="button" class="btn btn-dark active">Yellow</button>
+<button type="button" class="btn btn-danger active">Green</button>
+        <button type="button" class="btn btn-success active">Black</button>
+        <br><br>
+    </div> </center>
+
+     <center>
+    <div class = "button_div" id = "btn_div2" >
+<button type="button" class="btn btn-warning active">Blue</button>
+<button type="button" class="btn btn-primary active">Red</button>
+<button type="button" class="btn btn-dark active">Yellow</button>
+        <button type="button" class="btn btn-success active">Black</button>
+<button type="button" class="btn btn-danger active">Green</button>
+        <br><br>
+
+        <button type="button" class="btn btn-primary active">Yellow</button>
+<button type="button" class="btn btn-warning active">Red</button>
+<button type="button" class="btn btn-danger active">Green</button>
+<button type="button" class="btn btn-dark active">Blue</button>
+        <button type="button" class="btn btn-success active">Black</button>
+        <br><br>
+
+<button type="button" class="btn btn-warning active">Black</button>
+<button type="button" class="btn btn-success active">Yellow</button>
+<button type="button" class="btn btn-dark active">Blue</button>
+<button type="button" class="btn btn-danger active">Green</button>
+<button type="button" class="btn btn-primary active">Red</button>
+        <br><br>
+
+        <button type="button" class="btn btn-success active">Black</button>
+<button type="button" class="btn btn-dark active">Blue</button>
+<button type="button" class="btn btn-danger active">Yellow</button>
+<button type="button" class="btn btn-primary active">Red</button>
+<button type="button" class="btn btn-warning active">Green</button>
+        <br><br>
+    </div> </center>
+
+
+
+
+     <center>
+    <div class = "button_div" id = "btn_div3" >
+
+        <button type="button" class="btn btn-primary active">Red</button>
+<button type="button" class="btn btn-warning active">Yellow</button>
+<button type="button" class="btn btn-danger active">Green</button>
+<button type="button" class="btn btn-dark active">Blue</button>
+        <button type="button" class="btn btn-success active">Black</button>
+        <br><br>
+
+     <button type="button" class="btn btn-warning active">Yellow</button>
+<button type="button" class="btn btn-primary active">Red</button>
+<button type="button" class="btn btn-dark active">Blue</button>
+        <button type="button" class="btn btn-success active">Black</button>
+<button type="button" class="btn btn-danger active">Green</button>
+        <br><br>
+
+
+        <button type="button" class="btn btn-success active">Black</button>
+<button type="button" class="btn btn-dark active">Blue</button>
+<button type="button" class="btn btn-danger active">Green</button>
+<button type="button" class="btn btn-primary active">Red</button>
+<button type="button" class="btn btn-warning active">Yellow</button>
+        <br><br>
+
+    <button type="button" class="btn btn-warning active">Yellow</button>
+<button type="button" class="btn btn-success active">Black</button>
+<button type="button" class="btn btn-dark active">Blue</button>
+<button type="button" class="btn btn-danger active">Green</button>
+<button type="button" class="btn btn-primary active">Red</button>
+        <br><br>
+    </div> </center>
+
+     <center>
+    <div class = "button_div" id = "btn_div4" >
+          <button type="button" class="btn btn-warning active">Yellow</button>
+<button type="button" class="btn btn-success active">Black</button>
+<button type="button" class="btn btn-dark active">Blue</button>
+<button type="button" class="btn btn-danger active">Green</button>
+<button type="button" class="btn btn-primary active">Red</button>
+        <br><br>
+
+        <button type="button" class="btn btn-success active">Black</button>
+<button type="button" class="btn btn-dark active">Blue</button>
+<button type="button" class="btn btn-danger active">Green</button>
+<button type="button" class="btn btn-primary active">Red</button>
+<button type="button" class="btn btn-warning active">Yellow</button>
+        <br><br>
+     <button type="button" class="btn btn-warning active">Yellow</button>
+<button type="button" class="btn btn-primary active">Red</button>
+<button type="button" class="btn btn-dark active">Blue</button>
+        <button type="button" class="btn btn-success active">Black</button>
+<button type="button" class="btn btn-danger active">Green</button>
+        <br><br>
+        <button type="button" class="btn btn-primary active">Red</button>
+<button type="button" class="btn btn-warning active">Yellow</button>
+<button type="button" class="btn btn-danger active">Green</button>
+<button type="button" class="btn btn-dark active">Blue</button>
+        <button type="button" class="btn btn-success active">Black</button>
+        <br><br>
+    </div> </center>
+
+
+    <center>
+    <div class = "button_div" id = "btn_div5" >
+        <button type="button" class="btn btn-warning active">Yellow</button>
+<button type="button" class="btn btn-success active">Black</button>
+<button type="button" class="btn btn-dark active">Blue</button>
+<button type="button" class="btn btn-danger active">Green</button>
+<button type="button" class="btn btn-primary active">Red</button>
+        <br><br>
+<button type="button" class="btn btn-warning active">Yellow</button>
+<button type="button" class="btn btn-primary active">Red</button>
+<button type="button" class="btn btn-dark active">Blue</button>
+<button type="button" class="btn btn-danger active">Green</button>
+        <button type="button" class="btn btn-success active">Black</button>
+     <br><br>
+
+<button type="button" class="btn btn-primary active">Red</button>
+<button type="button" class="btn btn-success active">Black</button>
+<button type="button" class="btn btn-warning active">Yellow</button>
+<button type="button" class="btn btn-danger active">Green</button>
+<button type="button" class="btn btn-dark active">Blue</button>
+        <br><br>
+<button type="button" class="btn btn-success active">Black</button>
+<button type="button" class="btn btn-dark active">Blue</button>
+<button type="button" class="btn btn-danger active">Green</button>
+<button type="button" class="btn btn-primary active">Red</button>
+<button type="button" class="btn btn-warning active">Yellow</button>
+
+        <br><br>
+    </div> </center>
+    </center>
+</div>
+</body>
+ </html>
+
+<script>
+    function randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+}
+
+
+
+// Function call
+var s;
+s = ( randomNumber(0, 5));
+switch(s)
+{
+ case 1:
+   p = document.getElementById("btn_div1").innerHTML;
+   document.getElementById("print_div").innerHTML= p;
+   break;
+   case 2:
+         p = document.getElementById("btn_div2").innerHTML;
+         document.getElementById("print_div").innerHTML= p;
+        break;
+   case 3:
+            p = document.getElementById("btn_div3").innerHTML;
+            document.getElementById("print_div").innerHTML= p;
+            break;
+   case 4:
+            p = document.getElementById("btn_div4").innerHTML;
+            document.getElementById("print_div").innerHTML= p;
+         break;
+   case 5:
+            p = document.getElementById("btn_div5").innerHTML;
+            document.getElementById("print_div").innerHTML= p;
+            break;
+   default:
+          p = document.getElementById("btn_div1").innerHTML;
+          document.getElementById("print_div").innerHTML= p;
+ }
+
+</script>
+<script>
+   function timer()
+{
+	var time =  "00:00:31";
+	var timer_div = document.getElementById("time_div");
+	time_div.innerHTML = time;
+	my_timer = setInterval(function t (){
+
+		var time_up = false;
+		t= time.split(":");
+		var hr =  parseInt(t[0]);
+		var min = parseInt(t[1]);
+		var sec = parseInt(t[2]);
+
+		if(sec == 0)
+		{
+			if(min>0)
+			{
+				sec = 59;
+				min--;
+			}
+			else if(hr>0)
+			{
+				min = 59;
+				sec = 59;
+				hr--;
+			}
+			else
+			{
+				time_up =true;
+			}
+		}
+		else
+		{
+			sec--;
+		}
+		time = hr+":"+min+":"+sec;
+		if(time_up==true)
+		{
+			//time = "Time Out";
+		}
+		time_div.innerHTML = time;
+		if(time_up==true)
+		{
+
+			time =  "00:00:00";
+
+			function t () {
+  				clearIntervel(time);
+
+						}
+
+
+		//time = "Time Out";
+			//clearIntervel(time);
+
+		}
+
+
+	}, 1100);
+
+}
+</script>
